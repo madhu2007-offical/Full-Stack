@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Image */
+body {
+    height: 100vh;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20230702/pngtree-d-rendered-illustration-image-benefits-of-money-and-banking-in-business-image_3758883.jpg");
+    background-size: cover;         
+    background-position: center;     
+    background-repeat: no-repeat;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dark overlay for better text contrast */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Dashboard Container */
+.dashboard {
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.dashboard h2 {
+    color: #333;
+}
+
+/* Balance Card */
+.balance-card {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.balance-card p {
+    font-size: 14px;
+}
+
+.balance-card h3 {
+    font-size: 26px;
+    margin-top: 5px;
+}
+
+/* Input Field */
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.deposit {
+    background-color: #4caf50;
+    color: white;
+}
+
+.withdraw {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .dashboard {
+        width: 90%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
